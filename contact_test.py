@@ -10,6 +10,14 @@ class TestContact(unittest.TestCase):
         self.new_contact = Contact("Marvin", "Macharia", "0759082650", "marvin@gmail.com") # create contact object
 
 
+    def tearDown(self):
+        '''
+        tearDown method that does clean up after each test case has run.
+        '''
+
+        Contact.contact_list[]
+
+
     def test_init(self):
         '''
         test_init test case to test if the object is initialized properly
